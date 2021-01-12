@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
+
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-// import SkillsSection from '../components/SkillsSection';
 import { aboutMe, experience_BCI, experience_UWSquash, project_Joymouse } from '../components/InfoSection/Data';
-// import { Router } from 'react-router-dom'
+
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Hobbies from '../components/Hobbies';
