@@ -116,17 +116,33 @@ export const ImgWrap = styled.div`
     // padding-right: 50px;
     margin-left: 40px;
     margin-right: 40px;
+
+    @media screen and (max-width: 768px) {
+        max-width: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-width: 250px;
+    }
 `
 
 export const Img = styled.img`
-    width: 85%;
+    width: 100%; // 85%
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 10px;
     // max-height: 90%;
 
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 85%;
+    }
+
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
         transition: 0.25s all ease-in-out
     }
 `

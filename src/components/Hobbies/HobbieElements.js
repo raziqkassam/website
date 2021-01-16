@@ -120,4 +120,6 @@ export const HobbiesP = styled.p`
     font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
+    
+    
 `

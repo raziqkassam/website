@@ -19,7 +19,7 @@ export const FooterWrap = styled.div`
     align-items: center;
     text-align: center;
 
-    margin-bottom: 24px;
+    margin-bottom: 45px;
     padding: 24px;
     color: #fff;
 `

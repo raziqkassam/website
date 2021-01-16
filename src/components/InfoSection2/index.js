@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../ButtonElements'
 import { 
     InfoContainer,
     InfoWrapper,
@@ -11,12 +10,10 @@ import {
     Heading,
     Subtitle,
     BulletPoints,
-    BtnWrap,
     ImgWrap,
     Img,
     Title
-} from './InfoElements'
-
+} from '../InfoSection/InfoElements'
 
 
 const InfoSection = ( {
@@ -31,9 +28,7 @@ const InfoSection = ( {
     description1, 
     description2, 
     description3,
-    description4, 
-    buttonLink,
-    buttonLabel, 
+    description4,
     title,
     align_left,
     img, 
@@ -55,11 +50,6 @@ const InfoSection = ( {
                                 <BulletPoints darkText={darkText} >{description2}</BulletPoints>
                                 <BulletPoints darkText={darkText} >{description3}</BulletPoints>
                                 <BulletPoints darkText={darkText} >{description4}</BulletPoints>
-                                <BtnWrap>
-                                    <Button href={buttonLink} target="_blank" rel="noreferrer noopener" >
-                                        {buttonLabel}
-                                    </Button>
-                                </BtnWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>
