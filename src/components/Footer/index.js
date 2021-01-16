@@ -37,6 +37,14 @@ const Footer = () => {
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
 
+                {/* <FooterLinksContainer>
+                    <FooterLinksWrapper>
+                        <FooterLinksItems href='https://github.com/raziqkassam' target="_blank" rel="noreferrer noopener">
+                            <i class="fas fa-file-signature"/>RESUMÉ 
+                        </FooterLinksItems>
+                    </FooterLinksWrapper>
+                </FooterLinksContainer> */}
+
                 <FooterImageWrapper to='home' smooth={true}
                                         duration={1000}
                                         spy={true}

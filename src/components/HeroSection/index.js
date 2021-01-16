@@ -9,7 +9,8 @@ import {
     HeroH1,
     HeroBtnWrapper,
     ArrowDownward,
-    ArrowDown
+    ArrowDown,
+    HeroP
 } from './HeroElements'
 
 const HeroSection = () => {

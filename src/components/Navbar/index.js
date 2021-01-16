@@ -19,7 +19,7 @@ const Navbar = ( {toggle} ) => {
                 <NavbarContainer>
                     <NavLogo to='home'
                                         smooth={true}
-                                        duration={500}
+                                        duration={1000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80} 
@@ -74,7 +74,7 @@ const Navbar = ( {toggle} ) => {
                     <NavBtn>
                         <NavBtnLink to="contact"
                                         smooth={true}
-                                        duration={900}
+                                        duration={1100}
                                         spy={true}
                                         exact="true"
                                         // offset={-80}
