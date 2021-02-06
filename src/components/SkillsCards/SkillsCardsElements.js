@@ -3,13 +3,16 @@ import styled from 'styled-components'
 export const SkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     background: #757575;
 
     padding-top: 160px;
     padding-bottom: 160px;
 
+    @media only screen and (max-width: 760px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 `
 
 export const SkillsWrapper = styled.div`
@@ -22,11 +25,11 @@ export const SkillsWrapper = styled.div`
     padding: 0 50px;
     justify-content: center;
 
-    @media screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 760px) {
+    @media only screen and (max-width: 760px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -43,11 +46,11 @@ export const Title = styled.p`
 
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         margin-bottom: 40px;
     }
 
-    @media screen and (max-width: 760px) {
+    @media only screen and (max-width: 760px) {
         margin-bottom: 30px;
     }
 `
@@ -99,7 +102,7 @@ export const SkillsH1 = styled.h1`
     margin-bottom: 40px;
     // margin-top: 40px;
 
-    @media screen and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         font-size: 2rem;
     }
 `

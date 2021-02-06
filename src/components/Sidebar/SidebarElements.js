@@ -7,20 +7,41 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
+    background: black;
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.6s ease-in-out;
     
     opacity: ${ ({ isOpen }) => ( isOpen ? '100%' : '0' )}; // if open, 100%, else 0%
     top: ${ ({ isOpen }) => ( isOpen ? '0' : '-100%' )};
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: white;
+    color: gold;
 `
+
+export const NavLogo = styled( LinkS )`
+    justify-self: flex-start;
+    display: flex;
+    align-items: center;
+`
+
+export const NavImage = styled.img`
+    height: 72px;
+    width: 75px;
+
+    justify-self: flex-start;
+    align-items: center;
+    margin: -50px 0 0 25px;
+
+    &:hover {
+        transform: scale(0.93);
+        transition: 0.2s all ease-out;
+    }
+`
+
 export const Icon = styled.div`
     position: absolute;
     top: 1.2rem;
@@ -32,7 +53,7 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-    color: white;
+    color: #f9f9f9;
 `
 
 export const SidebarMenu = styled.ul`

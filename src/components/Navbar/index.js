@@ -4,6 +4,7 @@ import {
     Nav, 
     NavbarContainer, 
     NavLogo, 
+    NavImage,
     MobileIcon, 
     NavMenu, 
     NavItem, 
@@ -19,12 +20,12 @@ const Navbar = ( {toggle} ) => {
                 <NavbarContainer>
                     <NavLogo to='home'
                                         smooth={true}
-                                        duration={1000}
+                                        duration={2000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80} 
                                         >
-                        RAZIQ.me
+                        <NavImage src="./../images/img-hdr.jpg"/>
                     </NavLogo>
                     <MobileIcon onClick={toggle} >
                         <FaBars />
@@ -33,7 +34,7 @@ const Navbar = ( {toggle} ) => {
                         <NavItem>
                             <NavLinks to="about" 
                                         smooth={true}
-                                        duration={500}
+                                        duration={1000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80}
@@ -43,7 +44,7 @@ const Navbar = ( {toggle} ) => {
                         <NavItem>
                             <NavLinks to="skills"
                                         smooth={true}
-                                        duration={500}
+                                        duration={1000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80}
@@ -53,7 +54,7 @@ const Navbar = ( {toggle} ) => {
                         <NavItem>
                             <NavLinks to="experience"
                                         smooth={true}
-                                        duration={500}
+                                        duration={1000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80}
@@ -61,9 +62,9 @@ const Navbar = ( {toggle} ) => {
                                             Experience</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="projects"
+                            <NavLinks to='projects'
                                         smooth={true}
-                                        duration={500}
+                                        duration={1000}
                                         spy={true}
                                         exact="true"
                                         // offset={-80}
@@ -74,10 +75,10 @@ const Navbar = ( {toggle} ) => {
                     <NavBtn>
                         <NavBtnLink to="contact"
                                         smooth={true}
-                                        duration={1100}
+                                        duration={1400}
                                         spy={true}
                                         exact="true"
-                                        // offset={-80}
+                                        offset={-80}
                                         >
                                             Contact</NavBtnLink>
                     </NavBtn>
