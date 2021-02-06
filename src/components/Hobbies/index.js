@@ -15,8 +15,8 @@ import {
 
 const Hobbies = () => {
     return (
-        <HobbiesContainer>
-            <Title>Personal Projects</Title>
+        <HobbiesContainer id='projects'>
+            <Title>Personal Interests</Title>
 
             <TopLine>Acrylic Canvas Painting</TopLine>
             <HobbiesWrapper>
@@ -51,7 +51,7 @@ const Hobbies = () => {
                 </HobbiesCard>
                 <HobbiesCard>
                     <HobbiesIcon src="./../images/img-3d3.jpg" alt='na' />
-                    <HobbiesH2>Belem Tower</HobbiesH2>
+                    <HobbiesH2>Belem Tower, Lisbon</HobbiesH2>
                     <HobbiesP>SolidWorks | 2020</HobbiesP>
                 </HobbiesCard>
                 <HobbiesCard>

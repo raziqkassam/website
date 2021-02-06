@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import InfoSection2 from '../components/InfoSection2';
-import { aboutMe, experience_BCI, experience_XSENSOR, experience_GE, experience_Lumiere, experience_UWSquash, project_Joymouse } from '../components/InfoSection/Data';
+import { aboutMe, experience_BCI, experience_XSENSOR, experience_GE, experience_Lumiere, experience_UWSquash, project_Joymouse, experience_BioTEC } from '../components/InfoSection/Data';
 
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -28,8 +28,9 @@ const Home = () => {
             <SkillsCards />
             {/* <InfoSection {...experience_XSENSOR}/> */}
             <InfoSection {...experience_BCI}/>
-            <InfoSection {...experience_UWSquash}/>
+            <InfoSection2 {...experience_UWSquash}/>
             <InfoSection2 {...experience_Lumiere}/>
+            {/* <InfoSection {...experience_BioTEC}/> */}
             <InfoSection2 {...experience_GE}/>
             <InfoSection {...project_Joymouse}/>
             <Hobbies />

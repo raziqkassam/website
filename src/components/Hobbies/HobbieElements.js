@@ -1,37 +1,39 @@
 import styled from 'styled-components'
 
 export const HobbiesContainer = styled.div`
-    height: 1100px;
+    height: flex; // 1100px
+    padding: 100px 0 100px 0;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #757575;
 
-    @media screen and (max-width: 1200px) {
-        height: 1800px;
-    }
+    // @media screen and (max-width: 1200px) {
+    //     height: 1800px;
+    // }
 
-    @media screen and (max-width: 760px) {
-        height: 3200px;
-    }
+    // @media screen and (max-width: 760px) {
+    //     height: 3200px;
+    // }
 `
 
 export const HobbiesWrapper = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
 
     @media screen and (max-width: 1200px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
     }
 
     @media screen and (max-width: 760px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         padding: 0 20px;
     }
 `
@@ -45,8 +47,8 @@ export const Title = styled.p`
     text-transform: uppercase;
     margin-bottom: 36px;
     margin-top: 0px;
-    text-align: right;
-    align-self: flex-start;
+
+    align-self: start;
     margin-left: 12%;
 `
 

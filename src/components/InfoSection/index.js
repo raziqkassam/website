@@ -14,7 +14,8 @@ import {
     BtnWrap,
     ImgWrap,
     Img,
-    Title
+    Title,
+    InfoLogo
 } from './InfoElements'
 
 
@@ -38,6 +39,10 @@ const InfoSection = ( {
     align_left,
     img, 
     alt,
+    logo1,
+    logo2,
+    logo3,
+    icon
     // button_true
 }) => {
     return (

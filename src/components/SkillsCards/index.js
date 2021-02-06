@@ -24,8 +24,8 @@ const Hobbies = () => {
                     <SkillsIcon src="./../images/img-s1.svg" alt='na' />
                     <SkillsH2>Programming</SkillsH2>
                     {/* <SkillsPBold>C++, C#</SkillsPBold> */}
-                    <SkillsP>C++, C#</SkillsP>
-                    <SkillsP>Python, Node.js, Arduino</SkillsP>
+                    <SkillsP>C++, C#, Python</SkillsP>
+                    <SkillsP>Node.js, Arduino</SkillsP>
                 </SkillsCard>
 
                 <SkillsCard>
@@ -48,7 +48,7 @@ const Hobbies = () => {
                     <SkillsIcon src="./../images/img-s4.svg" alt='na' />
                     <SkillsH2>graphic design</SkillsH2>
                     {/* <SkillsPBold>SketchBook</SkillsPBold> */}
-                    <SkillsP>SketchBook</SkillsP>
+                    <SkillsP>SketchBook, Final Cut Pro</SkillsP>
                     <SkillsP>Adobe Photoshop, Canva</SkillsP>
                 </SkillsCard>
 

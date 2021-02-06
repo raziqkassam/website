@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import {MdArrowDownward, MdKeyboardArrowDown} from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    // background: #0c0c0c;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     padding: 0 30px;
     height: 800px; // 100vh
     position: relative;
@@ -40,25 +40,6 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
-    // justify-items: center;
-    
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`
-
-export const ImageBg = styled.img`
-    // display: none;
-    
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-        background: #232a34;
-        // justify-items: center;
-    }
-
 `
 
 export const HeroContent = styled.div`
@@ -78,28 +59,30 @@ export const HeroH1 = styled.h1`
     justify-self: center;
     line-height: 1;
 
-    @media screen and (max-width: 768px) {
-        font-size: 70px;
-    }
+    margin-top: 260px;
+    margin-bottom: 10px;
 
-    @media screen and (max-width: 480px) {
-        font-size: 50px;
+    @media only screen and (max-width: 768px) {
+        font-size: 70px;
     }
 `
 
 export const HeroP = styled.p`
-    color: white;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    font-size: 40px;
+    color: gold;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    font-size: 30px;
     text-align: center;
-    max-width: 600px;
+    align-items: center;
+    max-width: 500px;
+    // font-weight: bold;
 
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         font-size: 24px;
     }
 
-    @media screen and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
+        max-width: 250px;
         font-size: 18px;
     }
 `
