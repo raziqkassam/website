@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html prefix="og: https://ogp.me/ns#" lang="en">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- allows for correct media queries -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB9KTJFH84"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-KB9KTJFH84');
+    </script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- allows for correct media queries -->
 
     <link rel="icon" type="image/png" href="icon-sample2.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icon-package/apple-touch-icon.png">
@@ -38,7 +47,8 @@
     <title>Raziq Kassam</title>
 
     <meta property="og:title" content="Raziq Kassam" />
-    <meta property="og:image" content="https://www.raziq.me/images/img-banner.png" />
+    <meta property="og:description" content="Hi, I'm Raziq! I'm a Biomedical Engineering student at the University of Waterloo">
+    <meta property="og:image" content="https://www.raziq.me/images/img-banner2.png" />
 
   </head>
   <body>
@@ -54,5 +64,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+      <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAJKU3DQieH-DyPjxPrg2-cFVC6s77rdZY",
+          authDomain: "raz-website.firebaseapp.com",
+          databaseURL: "https://raz-website-default-rtdb.firebaseio.com",
+          projectId: "raz-website",
+          storageBucket: "raz-website.appspot.com",
+          messagingSenderId: "404190164382",
+          appId: "1:404190164382:web:6fb6d2d1810335d225d28f",
+          measurementId: "G-JMSY069DWZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+    </body>
 </html>

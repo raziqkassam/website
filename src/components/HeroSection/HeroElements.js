@@ -40,6 +40,21 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
+`
+
+export const ImageBg = styled.img`
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        background: #232a34;
+    }
 `
 
 export const HeroContent = styled.div`
@@ -60,17 +75,19 @@ export const HeroH1 = styled.h1`
     line-height: 1;
 
     margin-top: 260px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 
     @media only screen and (max-width: 768px) {
         font-size: 70px;
+        margin-top: 220px;
     }
 `
 
 export const HeroP = styled.p`
     color: gold;
-    margin-top: 34px;
-    margin-bottom: 34px;
+    // margin-top: 34px;
+    // margin-bottom: 34px;
+    line-height: 1.2;
     font-size: 30px;
     text-align: center;
     align-items: center;
@@ -82,13 +99,13 @@ export const HeroP = styled.p`
     }
 
     @media only screen and (max-width: 480px) {
-        max-width: 250px;
-        font-size: 18px;
+        max-width: 200px;
+        font-size: 22px;
     }
 `
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;

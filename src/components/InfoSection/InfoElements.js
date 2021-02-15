@@ -1,4 +1,4 @@
-import { getByPlaceholderText } from '@testing-library/react'
+// import { getByPlaceholderText } from '@testing-library/react'
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
@@ -99,7 +99,7 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-    max-width: 440px;
+    max-width: 410px;
     margin-bottom: 35px;
     font-size: 26px;
     line-height: 1.2;
