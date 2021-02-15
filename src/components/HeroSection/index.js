@@ -9,7 +9,8 @@ import {
     HeroBtnWrapper,
     ArrowDownward,
     ArrowDown,
-    HeroP
+    HeroP,
+    ImageBg
 } from './HeroElements'
 
 const HeroSection = () => {
@@ -25,10 +26,14 @@ const HeroSection = () => {
             <HeroContainer id="home">
                 <HeroBg>
                     <VideoBg autoPlay loop muted src="../../videos/video-bg2.mp4" type='video/mp4' />
+                    <ImageBg src="../../images/video-img.jpg" />
                 </HeroBg>
                 <HeroContent>
                     <HeroH1>RAZIQ KASSAM</HeroH1>
-                    <HeroP>Biomedical Engineering student at the University of Waterloo, class of 2024</HeroP>
+                    <HeroP><b>Biomedical Engineering</b></HeroP>
+                    <HeroP>University of Waterloo</HeroP>
+                    <HeroP>Class of 2024</HeroP>
+                    {/* <HeroP>University of Waterloo, Class of 2024</HeroP> */}
                     <HeroBtnWrapper>
                         <ButtonScroll to="contact" onMouseEnter={onHover} onMouseLeave={onHover} 
                         primary='false' dark='true' fontBig='false' big='false' 

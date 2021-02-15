@@ -48,8 +48,8 @@ const Hobbies = () => {
                     <SkillsIcon src="./../images/img-s4.svg" alt='na' />
                     <SkillsH2>graphic design</SkillsH2>
                     {/* <SkillsPBold>SketchBook</SkillsPBold> */}
-                    <SkillsP>SketchBook, Final Cut Pro</SkillsP>
-                    <SkillsP>Adobe Photoshop, Canva</SkillsP>
+                    <SkillsP>SketchBook, Adobe Photoshop</SkillsP>
+                    <SkillsP>Final Cut Pro, Canva, Figma</SkillsP>
                 </SkillsCard>
 
             </SkillsWrapper>

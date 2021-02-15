@@ -20,6 +20,10 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
     color: gold;
+    
+    &:hover {
+        color: white;
+    }
 `
 
 export const NavLogo = styled( LinkS )`
@@ -34,7 +38,7 @@ export const NavImage = styled.img`
 
     justify-self: flex-start;
     align-items: center;
-    margin: -50px 0 0 25px;
+    margin: 0 0 0 24px;
 
     &:hover {
         transform: scale(0.93);
@@ -64,9 +68,6 @@ export const SidebarMenu = styled.ul`
     font-size: 1.5rem;
     cursor: pointer;
 
-    @ media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }
 `
 
 export const SidebarLink = styled(LinkS)`

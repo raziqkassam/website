@@ -6,13 +6,14 @@ export const aboutMe = {
 
     topline: 'About Me', // section, or time and location for experience
     align_left: true, // can be true or false for aligning the title and topline at the left, depends on imgStart
-    headline: "I aim to live a life of resilience by continuing to embrace life's challenges and opportunities.", // and create a better tomorrow.',
-    description: "I am passionate about incoporating design, biotechnology, and machine learning in order to better the lives of others.", // job title
+    headline: "I choose to embrace life’s opportunities and grow from life’s challenges.", //
+    description: "I am passionate about design, biotechnology, and machine learning. I want to create a better tomorrow by working to improve the lives of others.", // job title
     // description1: "One of my goals is to travel to 50 countries. I want to meet people all over the world and expand my worldview.",
 
 
     imgStart: false, // true -> img on right, false -> img on left
     img: "./../images/img-ll.jpg", // image source // img-squash2.jpg
+
     alt: 'Post', // alt text if image doesnt work
 
     buttonLabel: 'LinkedIn', // words on the button
