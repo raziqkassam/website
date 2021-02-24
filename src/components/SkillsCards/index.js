@@ -23,7 +23,6 @@ const Hobbies = () => {
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s1.svg" alt='na' />
                     <SkillsH2>Programming</SkillsH2>
-                    {/* <SkillsPBold>C++, C#</SkillsPBold> */}
                     <SkillsP>C++, C#, Python</SkillsP>
                     <SkillsP>Node.js, Arduino</SkillsP>
                 </SkillsCard>
@@ -31,15 +30,13 @@ const Hobbies = () => {
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s2.svg" alt='na' />
                     <SkillsH2>Web Development</SkillsH2>
-                    {/* <SkillsPBold>React.js</SkillsPBold> */}
-                    <SkillsP>React.js</SkillsP>
-                    <SkillsP>HTML, CSS</SkillsP>
+                    <SkillsP>React.js, HTML</SkillsP>
+                    <SkillsP>CSS, Wix</SkillsP>
                 </SkillsCard>
 
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s3.svg" alt='na' />
                     <SkillsH2>3D Modelling</SkillsH2>
-                    {/* <SkillsPBold>SolidWorks</SkillsPBold> */}
                     <SkillsP>SolidWorks</SkillsP>
                     <SkillsP>3D Printing, MATLAB</SkillsP>
                 </SkillsCard>
@@ -47,7 +44,6 @@ const Hobbies = () => {
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s4.svg" alt='na' />
                     <SkillsH2>graphic design</SkillsH2>
-                    {/* <SkillsPBold>SketchBook</SkillsPBold> */}
                     <SkillsP>SketchBook, Adobe Photoshop</SkillsP>
                     <SkillsP>Final Cut Pro, Canva, Figma</SkillsP>
                 </SkillsCard>

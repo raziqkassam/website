@@ -8,25 +8,18 @@ export const HobbiesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #757575;
-
-    // @media screen and (max-width: 1200px) {
-    //     height: 1800px;
-    // }
-
-    // @media screen and (max-width: 760px) {
-    //     height: 3200px;
-    // }
+    background: #373737;
+    // max-width: 100vw;
 `
 
 export const HobbiesWrapper = styled.div`
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    // padding: 0 50px;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: auto auto;
@@ -39,32 +32,62 @@ export const HobbiesWrapper = styled.div`
 `
 
 export const Title = styled.p`
-    color: black;
-    font-size: 16px;
+    color: #52A3FF; //black
+    font-size: 20px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 36px;
+    margin-bottom: 22px;
     margin-top: 0px;
 
     align-self: start;
     margin-left: 12%;
 `
 
+export const HobbiesSubtitleContainer = styled.div`
+    display: flex;
+    align-self: start;
+    margin-left: 12%;
+`
+
+export const Subtitle = styled.p`
+    color: #d9d9d9;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 0px;
+`
+
+export const HobbiesPointerTitle = styled.div`
+    font-size: 15px;
+    line-height: 16px;
+    color: gold;
+    margin-right: 10px;
+    align-self: start;
+`
+
 export const TopLine = styled.p`
-    color: #DEC11B;
+    color: #DEC11B; // #52A3FF; //#DEC11B;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     margin-top: 25px;
+
+    @media screen and (max-width: 400px) {
+        max-width: 200px;
+        text-align: center;
+    }
 `
 
 export const HobbiesCard = styled.div`
-    background: #f9f9f9;
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -75,30 +98,27 @@ export const HobbiesCard = styled.div`
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.02);
         transition: all 0.2s ease-in-out;
-        // cursor: pointer;
     }
 `
+export const HobbiesHoverImageContainer = styled.div`
+    display: flex;
+    align-items: left;
+`
 
+export const HobbiesPointer = styled.div`
+    color: gold;
+    margin-left: -30px;
+    margin-right: 20px;
+`
 
 export const HobbiesIcon = styled.img`
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 280px;
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 10px;
-
-    /*
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-
-    &:hover {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        transition: 0.3s all ease-in-out;
-    }
-    */
+    border: 3px outset #52A3FF;
 `
 
 export const HobbiesH1 = styled.h1`
@@ -113,15 +133,25 @@ export const HobbiesH1 = styled.h1`
 `
 
 export const HobbiesH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     text-align: center;
+    color: gold;
 `
 
 export const HobbiesP = styled.p`
     font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
-    
-    
+    color: white;
+`
+
+export const LineContainer = styled.div`
+    margin-bottom: 16px;
+`
+
+export const Line = styled.hr`
+    margin-left: -25vw;
+    margin-right: -50vw;
+    border: 1px solid gold;
 `

@@ -1,8 +1,8 @@
 export const aboutMe = {
     id: 'about', // for navigation bar
-    lightBg: true, // background can be light or dark -> true or false
-    lightText: false, // should be opposite of background
-    darkText: true, // text of desciption, should be opposite of lightText
+    lightBg: false, // background can be light or dark -> true or false
+    lightText: true, // should be opposite of background
+    darkText: false, // text of desciption, should be opposite of lightText
 
     topline: 'About Me', // section, or time and location for experience
     align_left: true, // can be true or false for aligning the title and topline at the left, depends on imgStart
@@ -21,35 +21,35 @@ export const aboutMe = {
 }
 
 export const experience_XSENSOR = {
-    id: 'experience', // for navigation
-    lightBg: true, // background color
-    lightText: false, // color of 
-    lightTextDesc: false,
-    darkText: true,
+    id: 'experience', 
+    lightBg: true, 
+    lightText: true,
+    darkText: false,
 
-    align_left: false, // alignment of title and topline
-    title: 'Work Experience', // type of experience
-    topline: "Jan - Apr 20201 | XSENSOR Technology", // time and location
+    align_left: true, 
+    title: 'Work Experience', 
+    topline: "Jan - Apr 2021 | XSENSOR Technology Corporation",
 
-    headline: 'Machine Learning Intern', // job title and bullet points:
-    description1: '',
-    description2: '',
-    description4: '',
-    
-    imgStart: true, // true -> img on right, false -> img on left
-    img: "./../images/img-.jng", // image location
-    alt: 'XSENSOR', // alternate text instead of image
+    headline: 'Machine Learning Intern', 
+    description1: "Collected, cleaned and processed pressure imaging data to improve a joint detection machine learning model.",
+    description2: "Executed Python code that created plots and extracted statistics for international client reports.",
+    description3: "Assisted with the upscaling and transfer of the data collection and pipeline to Amazon Web Services.",
+    // description4: "Orchestrated the outsourcing of data labelling and created learning tools for international employees.",
 
-    buttonLabel: '', // words on the button
-    buttonLink: '' // what href or external link the button will take you to
+    imgStart: false, // true -> img on right, false -> img on left
+    img: "./../images/img-x.jpg", 
+    alt: 'XSENSOR', 
+
+    buttonLabel: '', 
+    buttonLink: ''
 }
 
 export const experience_BCI = {
     id: 'experience', // for navigation
     lightBg: true, // background color
-    lightText: false, // color of 
+    lightText: true, // color of 
     lightTextDesc: false,
-    darkText: true,
+    darkText: false,
 
     align_left: false, // alignment of title and topline
     title: 'Work Experience', // type of experience
@@ -66,32 +66,48 @@ export const experience_BCI = {
 
     buttonLabel: 'Github', // words on the button
     buttonLink: 'https://github.com/raziqkassam/sphero', // what href or external link the button will take you to
+}
 
-    logo1: "fab fa-python",
-    logo2: "fab fa-node",
-    logo3: "fab fa-python"
+export const experience_BioTEC = {
+    id: 'experience',
+    lightBg: false,
+    lightText: true,
+    darkText: false,
+
+    title: 'Leadership Experience',
+    align_left: true,
+    topline: "Since Jan 2021 | BioTEC Conference", // 
+    headline: 'Web Platform Lead',
+    description1: 'Design and maintain the official website for the Biotechnology and Bioengineering Conference (BioTEC).',
+    description2: 'Plan website layouts in Figma and apply creative design solutions to help craft the digital brand of the conference.',
+    description3: "Collaborate with multiple teams to produce, market and implement forms of content to global attendees.",
+    
+    imgStart: false,
+    img: "./../images/img-biotec.jpg", 
+    alt: 'BioTEC',
+
+    buttonLabel: 'BioTEC Website',
+    buttonLink: 'https://www.uwbiotec.ca'
 }
 
 export const experience_UWSquash = {
     id: 'experience',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: true,
+    darkText: false,
 
     title: 'Leadership Experience',
-    align_left: true,
+    align_left: false,
     topline: "since Sept 2019 | waterloo Squash team", // "University of waterloo varsity squash team",
     headline: 'Varsity Player and Social Media Ambassador',
     description1: 'Commitment of multiple hours a week for team practice, fitness sessions, tournaments and squash committee meetings.',
     description2: 'Produce and edit multiple forms of media for the team’s various social media platforms.',
     description3: 'Increased social media engagement by 125%, engaging the team and sponsors during the pandemic.',
     
-    imgStart: false,
+    imgStart: true,
     img: "./../images/img-squash.jpg", // squash->playing, squash2->intros
     alt: 'Squash',
-    dark: false,
-    darkText: false,
-    primary: true,
 
     buttonLabel: 'Team Instagram Page',
     buttonLink: 'https://instagram.com/wloosquash'
@@ -99,12 +115,11 @@ export const experience_UWSquash = {
 
 export const experience_Lumiere = {
     id: 'experience', // for navigation
-    lightBg: true, // background color
-    lightText: false, // color of 
-    lightTextDesc: false,
-    darkText: true,
+    lightBg: false, // background color
+    lightText: true, // color of 
+    darkText: false,
 
-    align_left: false, // alignment of title and topline
+    align_left: true, // alignment of title and topline
     title: 'Leadership Experience', // type of experience
     topline: "Sep 2017 - May 2018 | Junior Achievement", // time and location
 
@@ -114,65 +129,40 @@ export const experience_Lumiere = {
     description3: 'Developed and implemented efficient strategies for operations through leading production meetings.',
     // description4: 'Applied consumer feedback and adjusted product for future sales.',
     
-    imgStart: true, // true -> img on right, false -> img on left
+    imgStart: false, // true -> img on right, false -> img on left
     img: "./../images/img-lumiere.jpg", // image location
     alt: 'Lumiere', // alternate text instead of image
 
 }
 
-export const experience_BioTEC = {
-    id: 'experience',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    darkText: true,
-
-    title: 'Leadership Experience',
-    align_left: false,
-    topline: "Since Jan 2021 | BioTEC Conference", // 
-    headline: 'Web Platform Lead',
-    description1: 'Website Stuff for the Biotechnology and Bioengineering Conference',
-    description2: 'Github',
-    description3: "Conference Website",
-    
-    imgStart: true,
-    img: "./../images/img-biotec.jpg", 
-    alt: 'BioTEC',
-
-    buttonLabel: 'BioTEC Website',
-    buttonLink: 'https://www.uwbiotec.ca'
-}
-
 export const experience_GE = {
     id: 'experience',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: true,
+    darkText: false,
 
     title: 'Volunteer Experience',
-    align_left: true,
+    align_left: false,
     topline: "July - Aug 2018 | Hyderabad, India", // "University of waterloo varsity squash team",
     headline: 'Global Encounters Volunteer',
     description1: 'Participated in a service-learning trip with 60 students across 17 countries; focused on service, leadership and culture.',
     description2: 'Volunteered over 50 hours at a local government school, and increased productivity by leading debriefs for our service team.',
     description3: "Educated local students about the importance of personal hygiene through interactive presentations.",
     
-    imgStart: false,
+    imgStart: true,
     img: "./../images/img-ge.jpg", 
     alt: 'GE',
-    dark: false,
-    darkText: false,
-    primary: true,
 }
 
 export const project_Joymouse = {
     id: 'projects',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    darkText: false,
 
     title: 'Project',
-    align_left: false,
+    align_left: true,
     topline: "Joymouse | BME 161 Design Project",
     headline: 'Joystick Controlled Cursor for Individuals with Hand Tremors',
     description1: 'Created a functioning prototype that mechanically filters out unwanted cursor movement from hand tremors.',
@@ -180,14 +170,33 @@ export const project_Joymouse = {
     // description3: 'Quantified the success of the device with 84% satisfaction of device comfortability', 
     description4: 'Effectively stabilized cursor movement and decreased average acceleration by 266%.',
     
-    imgStart: true,
+    imgStart: false,
     img: "./../images/img-joymouse copy.png",
     alt: 'Joymouse',
-    dark: true,
-    darkText: true,
-    primary: true,
 
     buttonLabel: 'Github',
     buttonLink: 'https://github.com/raziqkassam/joymouse'
 }
 
+export const project_WebDev = {
+    id: 'projects',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    darkText: true,
+
+    title: 'Project',
+    align_left: false,
+    topline: "Since Feb 2021 | Ladhani Consulting",
+    headline: 'Website Developer',
+    description1: "",
+    description2: "",
+    description3: "", 
+    
+    imgStart: true,
+    img: "./../images/img-webdev.png",
+    alt: 'WebDev',
+
+    buttonLabel: "",
+    buttonLink: ""
+}

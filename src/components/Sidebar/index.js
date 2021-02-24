@@ -33,28 +33,28 @@ const Sidebar = ( {isOpen, toggle} ) => {
                                         duration={1500}
                                         spy={true}
                                         exact="true"
-                                        // offset={-80} 
+                                        offset={-80} 
                                         >About</SidebarLink>
                     <SidebarLink to="skills" onClick={toggle} 
                                         smooth={true}
                                         duration={1000}
                                         spy={true}
                                         exact="true"
-                                        offset={-40} 
+                                        offset={-80} 
                                         >Skills</SidebarLink>
                     <SidebarLink to="experience" onClick={toggle} 
                                         smooth={true}
                                         duration={1500}
                                         spy={true}
                                         exact="true"
-                                        offset={-40} 
+                                        offset={-80} 
                                         >Experience</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle} 
                                         smooth={true}
                                         duration={1500}
                                         spy={true}
                                         exact="true"
-                                        offset={-40} 
+                                        offset={-80} 
                                         >Projects</SidebarLink>
                 </SidebarMenu>
                 <SidebarBtnWrap>

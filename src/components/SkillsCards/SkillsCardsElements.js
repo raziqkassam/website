@@ -4,10 +4,11 @@ export const SkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #757575;
+    background: #373737; // #757575
 
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding: 100px 0;
+    // padding-top: 160px;
+    // padding-bottom: 160px;
 
     @media only screen and (max-width: 760px) {
         padding-top: 100px;
@@ -19,25 +20,25 @@ export const SkillsWrapper = styled.div`
     // max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
     justify-content: center;
 
     @media only screen and (max-width: 1200px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
     }
 
     @media only screen and (max-width: 760px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         padding: 0 20px;
     }
 `
 
 export const Title = styled.p`
-    color: black;
-    font-size: 16px;
+    color: #52A3FF; // black;
+    font-size: 20px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -56,13 +57,13 @@ export const Title = styled.p`
 `
 
 export const TopLine = styled.p`
-    color: #DEC11B;
+    color: #DEC11B; // #52A3FF; //#DEC11B;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 80px; // margin: -50px 0 50px 0; // 
     padding: 0 60px 0 60px;
     align-self: center;
     text-align: center;
@@ -75,7 +76,7 @@ export const SkillsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 315px;
+    height: 305px;
     width: 280px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
@@ -85,7 +86,6 @@ export const SkillsCard = styled.div`
         transition: all 0.2s ease-in-out;
         // cursor: pointer;
     }
-
 `
 
 export const SkillsIcon = styled.img`
