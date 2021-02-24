@@ -1,29 +1,31 @@
-// import { getByPlaceholderText } from '@testing-library/react'
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    background: ${({lightBg}) => (lightBg ? "#f9f9f9" : "#757575" )};
+    background: ${({lightBg}) => (lightBg ? "#252525" : "#1e1e1e" )};
 
     @media (max-width: 900px) {
-        padding: 100px 0;
+        padding: 40px 25px;
     }
 
     @media (max-width: 480px) {
-        padding-top: 80px;
-        padding-bottom: 105px;
+        padding: 20px 0 0 0;
     }
 `
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: flex;  // 860px; // flex;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 100px 24px; // 40px 25px; // 0 24px;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        padding: 40px 20px 20px 20px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -41,12 +43,20 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+
+    @media (max-width: 480px) {
+        padding: 0 15px;
+    }
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+
+    @media (max-width: 480px) {
+        padding: 0 15px;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -55,9 +65,9 @@ export const TextWrapper = styled.div`
 `
 
 export const Title = styled.p`
-    color: black;
-    font-size: 16px;
-    line-height: 16px;
+    color: #52A3FF; // black;
+    font-size: 20px;
+    line-height: 1.1;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -71,17 +81,19 @@ export const Title = styled.p`
 `
 
 export const TopLine = styled.p`
-    color: #DEC11B;
-    font-size: 16px;
-    line-height: 16px;
+    color: gold; // E1BE00, DEC11B
+    font-size: 18px;
+    line-height: 1.1;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    max-width: 700px;
     text-align: ${({ align_left }) => (align_left ? 'left' : 'right')};
 
     @media (max-width: 480px) {
         text-align: left;
+        max-width: 250px;
     }
 `
 
@@ -103,7 +115,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 26px;
     line-height: 1.2;
-    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+    color: ${({ darkText }) => (darkText ? '#010606' : 'white')};
 `
 
 export const BulletPoints = styled.p`
@@ -111,7 +123,7 @@ export const BulletPoints = styled.p`
     margin-bottom: 18px;
     font-size: 20px;
     line-height: 1.1;
-    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+    color: ${({ darkText }) => (darkText ? '#010606' : '#f0f0f0')};
 `
 
 export const BtnWrap = styled.div`
@@ -152,7 +164,6 @@ export const Img = styled.img`
 
     @media (max-width: 768px) {
         margin-top: 0;
-        
     }
 
     &:hover {

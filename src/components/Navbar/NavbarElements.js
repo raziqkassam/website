@@ -18,6 +18,11 @@ export const Nav = styled.nav`
     @media only screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+
+    &:hover {
+        opacity: 100%;
+        transition: all 0.4s ease-in-out;
+    }
     
 `
 
