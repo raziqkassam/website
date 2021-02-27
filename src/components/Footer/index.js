@@ -20,7 +20,7 @@ const Footer = () => {
             <FooterContainer id='contact'>
 
                 <FooterWrap>
-                    <FooterH1>Feel free to connect!</FooterH1>
+                    <FooterH1>Feel free to reach out!</FooterH1>
                     <FooterP href="mailto:raziq.kassam@gmail.com" >raziq.kassam@gmail.com</FooterP>
                     <FooterP href="mailto:r9kassam@uwaterloo.ca">r9kassam@uwaterloo.ca</FooterP>
                 </FooterWrap>

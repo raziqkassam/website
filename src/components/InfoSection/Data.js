@@ -4,7 +4,7 @@ export const aboutMe = {
     lightText: true, // should be opposite of background
     darkText: false, // text of desciption, should be opposite of lightText
 
-    topline: 'About Me', // section, or time and location for experience
+    // topline: 'About Me', // section, or time and location for experience
     align_left: true, // can be true or false for aligning the title and topline at the left, depends on imgStart
     headline: "I choose to embrace life’s opportunities and grow from life’s challenges.", //
     description: "I am passionate about design, biotechnology, and machine learning. I want to create a better tomorrow by working to improve the lives of others.", // job title
@@ -161,9 +161,9 @@ export const project_Joymouse = {
     lightText: true,
     darkText: false,
 
-    title: 'Project',
+    title: 'Design Project',
     align_left: true,
-    topline: "Joymouse | BME 161 Design Project",
+    topline: "Joymouse | BME 161",
     headline: 'Joystick Controlled Cursor for Individuals with Hand Tremors',
     description1: 'Created a functioning prototype that mechanically filters out unwanted cursor movement from hand tremors.',
     description2: 'Implemented Arduino coding for clicking and cursor movement on a computer.',

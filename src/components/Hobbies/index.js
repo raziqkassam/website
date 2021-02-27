@@ -5,6 +5,7 @@ import {
     HobbiesContainer,
     HobbiesWrapper,
     HobbiesCard,
+    HobbiesCardHover,
     HobbiesIcon,
     HobbiesPointer,
     HobbiesPointerTitle,
@@ -42,7 +43,7 @@ const Hobbies = () => {
             <Title>Visual Art Projects</Title>
             <HobbiesSubtitleContainer>
                 <HobbiesPointerTitle><i class="far fa-hand-pointer"/></HobbiesPointerTitle>
-                <Subtitle>hover/click to see original</Subtitle>
+                <Subtitle>click to see original</Subtitle>
             </HobbiesSubtitleContainer>
 
             <TopLine>Acrylic Canvas Painting</TopLine>
@@ -55,7 +56,7 @@ const Hobbies = () => {
                     <HobbiesH2>" BLOOM "</HobbiesH2>
                     <HobbiesP>November 2016</HobbiesP>
                 </HobbiesCard>
-                <HobbiesCard onMouseEnter={onHover3} onMouseLeave={onHover3}>
+                <HobbiesCardHover onClick={onHover3}>
                         {hover3 ? <HobbiesIcon alt='na'  src="./../images/img-paint2-real.jpg"/ > : 
                              <HobbiesIcon alt='nan' src="./../images/img-paint2.jpg"/> }
                     <HobbiesHoverImageContainer>
@@ -63,13 +64,13 @@ const Hobbies = () => {
                         <HobbiesH2>" BLOSSOM "</HobbiesH2>
                     </HobbiesHoverImageContainer>
                     <HobbiesP>July 2020</HobbiesP>
-                </HobbiesCard>
+                </HobbiesCardHover>
                 <HobbiesCard>
                     <HobbiesIcon src="./../images/img-paint3.jpg" alt='na' />
                     <HobbiesH2>" MOO "</HobbiesH2>
                     <HobbiesP>May 2017</HobbiesP>
                 </HobbiesCard>
-                <HobbiesCard onMouseEnter={onHover} onMouseLeave={onHover} >
+                <HobbiesCardHover onClick={onHover} >
                     {hover ? <HobbiesIcon alt='na'  src="./../images/img-paint4-real.jpg"/ > : 
                              <HobbiesIcon alt='nan' src="./../images/img-paint4.jpg"/> }
                     <HobbiesHoverImageContainer>
@@ -77,7 +78,7 @@ const Hobbies = () => {
                         <HobbiesH2>" PONTE DE PIEDAD "</HobbiesH2>
                     </HobbiesHoverImageContainer>
                     <HobbiesP>March 2020</HobbiesP>
-                </HobbiesCard>
+                </HobbiesCardHover>
             </HobbiesWrapper>
 
             <TopLine>3D Modelling and Graphic Design</TopLine>
@@ -90,7 +91,7 @@ const Hobbies = () => {
                     <HobbiesH2>Golf Cart</HobbiesH2>
                     <HobbiesP>SolidWorks | 2019</HobbiesP>
                 </HobbiesCard>
-                <HobbiesCard onMouseEnter={onHover2} onMouseLeave={onHover2} >
+                <HobbiesCardHover onClick={onHover2} >
                     {hover2 ? <HobbiesIcon alt='na'  src="./../images/img-3d3-real.jpg"/ > : 
                              <HobbiesIcon alt='nan' src="./../images/img-3d3.jpg"/> }    
                              <HobbiesHoverImageContainer>
@@ -98,7 +99,7 @@ const Hobbies = () => {
                         <HobbiesH2>Belem Tower, Lisbon</HobbiesH2>
                     </HobbiesHoverImageContainer>
                     <HobbiesP>SolidWorks | 2020</HobbiesP>
-                </HobbiesCard>
+                </HobbiesCardHover>
                 <HobbiesCard>
                     <HobbiesIcon src="./../images/img-gd1.png" alt='na' />
                     <HobbiesH2>Canadian Junior Championship</HobbiesH2>

@@ -7,18 +7,17 @@ export const SkillsContainer = styled.div`
     background: #373737; // #757575
 
     padding: 100px 0;
-    // padding-top: 160px;
-    // padding-bottom: 160px;
 
     @media only screen and (max-width: 760px) {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 80px;
     }
 `
 
 export const SkillsWrapper = styled.div`
     // max-width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
@@ -52,21 +51,27 @@ export const Title = styled.p`
     }
 
     @media only screen and (max-width: 760px) {
-        margin-bottom: 30px;
+        margin: 0 0;
     }
 `
 
 export const TopLine = styled.p`
-    color: #DEC11B; // #52A3FF; //#DEC11B;
-    font-size: 16px;
-    line-height: 16px;
+    color: #52A3FF; // #52A3FF; //#DEC11B;
+    font-size: 18px;
+    line-height: 15px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 80px; // margin: -50px 0 50px 0; // 
-    padding: 0 60px 0 60px;
+    margin-bottom: 1.4rem;// 90px; // margin: -50px 0 50px 0; // 
+    padding: 0 40px 0 40px;
     align-self: center;
     text-align: center;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 15px;
+        padding: 0 20px 0 20px;
+
+    }
 `
 
 export const SkillsCard = styled.div`
@@ -80,6 +85,11 @@ export const SkillsCard = styled.div`
     width: 280px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
+    margin-top: 8px;
+
+    @media only screen and (max-width: 760px) {
+        margin-top: auto;
+    }
 
     &:hover {
         transform: scale(1.02);

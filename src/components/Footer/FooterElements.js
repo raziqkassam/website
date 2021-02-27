@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll'
 
 export const FooterContainer = styled.div`
-    height: 720px;
+    height: 600px;
     background: black;
     // background: transparent;
-    padding: 4rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,14 +19,14 @@ export const FooterWrap = styled.div`
     align-items: center;
     text-align: center;
 
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     padding: 24px;
     color: #fff;
 `
 
 export const FooterImage = styled.img`
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     margin-top: 50px;
 
     &:hover {
@@ -44,7 +44,7 @@ export const FooterImageWrapper = styled(LinkS)`
 
 export const FooterH1 = styled.h1`
     margin-bottom: 30px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: gold;
 `
 
