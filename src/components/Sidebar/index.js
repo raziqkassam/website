@@ -37,7 +37,7 @@ const Sidebar = ( {isOpen, toggle} ) => {
                                         >About</SidebarLink>
                     <SidebarLink to="skills" onClick={toggle} 
                                         smooth={true}
-                                        duration={1000}
+                                        duration={1500}
                                         spy={true}
                                         exact="true"
                                         offset={-80} 

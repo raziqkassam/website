@@ -15,8 +15,9 @@ const Hobbies = () => {
     return (
         <SkillsContainer id="skills">
 
-            <Title>skills</Title>
-            <TopLine>“Education is an ornament in prosperity and a refuge in adversity” — Aristotle</TopLine>
+            {/* <Title>skills</Title> */}
+            <TopLine>“Education is an ornament in prosperity and a refuge in adversity”</TopLine>
+            <TopLine>- Aristotle</TopLine>
 
             <SkillsWrapper>
                 

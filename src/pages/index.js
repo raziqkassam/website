@@ -11,7 +11,8 @@ import Hobbies from '../components/Hobbies';
 import Footer from '../components/Footer';
 import SkillsCards from '../components/SkillsCards';
 import Header from '../components/Headers';
-import { Header_Experience, Header_Projects, Header_Skills } from '../components/Headers/HeaderData';
+import { Header_AboutMe, Header_Experience, Header_Projects, Header_Skills, Header_Contact } from '../components/Headers/HeaderData';
+import About from '../components/About';
 
 const Home = () => {
 
@@ -26,20 +27,23 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            <InfoSection {...aboutMe}/>
-            {/* <Header {...Header_Skills}/> */}
+            <Header {...Header_AboutMe}/>
+            <About/>
+            {/* <InfoSection {...aboutMe}/> */}
+            <Header {...Header_Skills}/>
             <SkillsCards />
-            {/* <Header {...Header_Experience}/> */}
+            <Header {...Header_Experience}/>
             {/* <InfoSection2 {...experience_XSENSOR}/> */}
             <InfoSection {...experience_BCI}/>
             <InfoSection {...experience_BioTEC}/>
             <InfoSection2 {...experience_UWSquash}/>
             <InfoSection2 {...experience_Lumiere}/>
             <InfoSection2 {...experience_GE}/>
-            {/* <Header {...Header_Projects}/> */}
+            <Header {...Header_Projects}/>
             <InfoSection {...project_Joymouse}/>
             {/* <InfoSection2 {...project_WebDev}/> */}
             <Hobbies />
+            <Header {...Header_Contact}/>
             <Footer />
         </>
     )

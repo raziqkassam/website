@@ -101,14 +101,17 @@ export const NavLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 22px;
     height: 100%;
     cursor: pointer;
     font-size: 20px;
 
     &:hover {
+        // padding: 0 20px;
         font-weight: bold;
         color: gold;
+        transition: all 0.2s ease-in-out;
+        transform: translateY(-4px);
     }
     
     &.active {
@@ -141,7 +144,8 @@ export const NavBtnLink = styled(LinkS)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: white;
+        transform: translateY(-4px);
+        background: #f9f9f9;
         color: black;
     }
 `

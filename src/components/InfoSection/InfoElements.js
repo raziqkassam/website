@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 100px 24px; // 40px 25px; // 0 24px;
+    padding: 80px 24px; // 40px 25px; // 0 24px;
     justify-content: center;
 
     @media (max-width: 480px) {

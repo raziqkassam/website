@@ -101,9 +101,29 @@ export const HobbiesCard = styled.div`
         transition: all 0.2s ease-in-out;
     }
 `
+
+export const HobbiesCardHover = styled.div`
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 340px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+    }
+`
+
 export const HobbiesHoverImageContainer = styled.div`
     display: flex;
     align-items: left;
+    cursor: pointer;
 `
 
 export const HobbiesPointer = styled.div`
@@ -154,4 +174,5 @@ export const Line = styled.hr`
     margin-left: -25vw;
     margin-right: -50vw;
     border: 1px solid gold;
+    max-width: 74.5vw;
 `
