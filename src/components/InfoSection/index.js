@@ -45,8 +45,8 @@ const InfoSection = ( {
                     <InfoRow imgStart={imgStart} >
                         <Column1>
                             <TextWrapper>
-                                <Title align_left={align_left} >{title}</Title>
-                                <TopLine align_left={align_left} >{topline}</TopLine>
+                                {/* <Title align_left={align_left} >{title}</Title>
+                                <TopLine align_left={align_left} >{topline}</TopLine> */}
                                 <Heading lightText={lightText} >{headline}</Heading>
                                 <Subtitle darkText={darkText} >{description}</Subtitle>
                                 <BulletPoints darkText={darkText} >{description1}</BulletPoints>
@@ -61,6 +61,8 @@ const InfoSection = ( {
                             </TextWrapper>
                         </Column1>
                         <Column2>
+                            <Title align_left={align_left} >{title}</Title>
+                            <TopLine align_left={align_left} >{topline}</TopLine>
                             <ImgWrap>
                                 <Img src={img} alt={alt} autoPlay muted />
                             </ImgWrap>

@@ -42,13 +42,27 @@ const Sidebar = ( {isOpen, toggle} ) => {
                                         exact="true"
                                         offset={-80} 
                                         >Skills</SidebarLink>
-                    <SidebarLink to="experience" onClick={toggle} 
+                    {/* <SidebarLink to="experience" onClick={toggle} 
                                         smooth={true}
                                         duration={1500}
                                         spy={true}
                                         exact="true"
                                         offset={-80} 
-                                        >Experience</SidebarLink>
+                                        >Experience</SidebarLink> */}
+                    <SidebarLink to="work" onClick={toggle} 
+                                        smooth={true}
+                                        duration={1500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80} 
+                                        >Work</SidebarLink>
+                    <SidebarLink to="leadership" onClick={toggle} 
+                                        smooth={true}
+                                        duration={1500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80} 
+                                        >Leadership</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle} 
                                         smooth={true}
                                         duration={1500}

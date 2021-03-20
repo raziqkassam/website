@@ -13,6 +13,7 @@ import {
     HobbiesP,
     TopLine,
     Title,
+    Title2,
     Subtitle,
     HobbiesSubtitleContainer,
     LineContainer,
@@ -26,21 +27,24 @@ const Hobbies = () => {
     const onHover = () => {
         setHover( !hover )
     }
-
     const [hover2, setHover2] = useState(false)
     const onHover2 = () => {
         setHover2( !hover2 )
     }
-
     const [hover3, setHover3] = useState(false)
     const onHover3 = () => {
         setHover3( !hover3 )
+    }
+    const [hover4, setHover4] = useState(false)
+    const onHover4 = () => {
+        setHover4( !hover4 )
     }
    
 
     return (
         <HobbiesContainer id='projects'>
-            <Title>Visual Art Projects</Title>
+            <Title>2015 - Present</Title>
+            <Title2>Visual Art Projects</Title2>
             <HobbiesSubtitleContainer>
                 <HobbiesPointerTitle><i class="far fa-hand-pointer"/></HobbiesPointerTitle>
                 <Subtitle>click to see original</Subtitle>
@@ -50,6 +54,7 @@ const Hobbies = () => {
             <LineContainer>
                 <Line />
             </LineContainer>
+            
             <HobbiesWrapper>
                 <HobbiesCard>
                     <HobbiesIcon src="./../images/img-paint1.jpg" alt='na' />
@@ -65,11 +70,15 @@ const Hobbies = () => {
                     </HobbiesHoverImageContainer>
                     <HobbiesP>July 2020</HobbiesP>
                 </HobbiesCardHover>
-                <HobbiesCard>
-                    <HobbiesIcon src="./../images/img-paint3.jpg" alt='na' />
-                    <HobbiesH2>" MOO "</HobbiesH2>
+                <HobbiesCardHover onClick={onHover4}>
+                        {hover4 ? <HobbiesIcon alt='na'  src="./../images/img-paint3-real.jpg"/ > : 
+                            <HobbiesIcon src="./../images/img-paint3.jpg" alt='na'/> }
+                    <HobbiesHoverImageContainer>
+                        <HobbiesPointer><i class="far fa-hand-pointer"/></HobbiesPointer>
+                        <HobbiesH2>" MOO "</HobbiesH2>
+                    </HobbiesHoverImageContainer>
                     <HobbiesP>May 2017</HobbiesP>
-                </HobbiesCard>
+                </HobbiesCardHover>
                 <HobbiesCardHover onClick={onHover} >
                     {hover ? <HobbiesIcon alt='na'  src="./../images/img-paint4-real.jpg"/ > : 
                              <HobbiesIcon alt='nan' src="./../images/img-paint4.jpg"/> }
@@ -81,10 +90,11 @@ const Hobbies = () => {
                 </HobbiesCardHover>
             </HobbiesWrapper>
 
-            <TopLine>3D Modelling and Graphic Design</TopLine>
+            <TopLine>3D Modelling And Graphic Design</TopLine>
             <LineContainer>
                 <Line />
             </LineContainer>
+
             <HobbiesWrapper>
                 <HobbiesCard>
                     <HobbiesIcon src="./../images/img-3d1.jpg" alt='na' />

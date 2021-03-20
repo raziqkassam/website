@@ -6,18 +6,18 @@ export const SkillsContainer = styled.div`
     align-items: center;
     background: #373737; // #757575
 
-    padding: 100px 0;
+    padding: 30px 0;
 
     @media only screen and (max-width: 760px) {
-        padding-top: 50px;
-        padding-bottom: 80px;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 `
 
 export const SkillsWrapper = styled.div`
     // max-width: 1200px;
     // margin: 0 auto;
-    margin-top: 50px;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
@@ -30,8 +30,10 @@ export const SkillsWrapper = styled.div`
     }
 
     @media only screen and (max-width: 760px) {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         padding: 0 20px;
+        margin-top: 35px;
+        grid-gap: 10px;
     }
 `
 
@@ -58,18 +60,18 @@ export const Title = styled.p`
 export const TopLine = styled.p`
     color: #52A3FF; // #52A3FF; //#DEC11B;
     font-size: 18px;
-    line-height: 15px;
+    line-height: 17px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 1.4rem;// 90px; // margin: -50px 0 50px 0; // 
+    margin-bottom: 10px;// 90px; // margin: -50px 0 50px 0; // 
     padding: 0 40px 0 40px;
     align-self: center;
     text-align: center;
 
     @media only screen and (max-width: 480px) {
-        font-size: 15px;
-        padding: 0 20px 0 20px;
+        font-size: 18px;
+        padding: 0 5px;
 
     }
 `
@@ -91,6 +93,12 @@ export const SkillsCard = styled.div`
         margin-top: auto;
     }
 
+    @media only screen and (max-width: 480px) {
+        height: 230px;
+        width: 170px;
+        padding: 5px;
+    }
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -104,6 +112,11 @@ export const SkillsIcon = styled.img`
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 10px;
+
+    @media only screen and (max-width: 480px) {
+        height: 100px;
+        width: 100px;
+    }
 `
 
 export const SkillsH1 = styled.h1`
@@ -125,6 +138,10 @@ export const SkillsH2 = styled.h2`
     margin-top: 10px;
 
     text-align: center;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 18px;
+    }
 `
 
 export const SkillsP = styled.p`
@@ -135,8 +152,13 @@ export const SkillsP = styled.p`
     margin-bottom: 10px;
     align-items: center;
 
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
 `
 export const SkillsPBold = styled.p`
     color: #f9f9f9;

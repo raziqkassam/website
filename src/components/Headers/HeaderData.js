@@ -22,3 +22,14 @@ export const Header_Contact = {
     id: "contact",
     header: "CONTACT ME"
 }
+
+export const Header_Work = {
+    id: "work",
+    header: "WORK EXPERIENCE"
+}
+
+export const Header_Leadership = {
+    id: "leadership",
+    header: "LEADERSHIP EXPERIENCE"
+}
+

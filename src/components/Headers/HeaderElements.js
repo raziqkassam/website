@@ -22,7 +22,7 @@ export const HeaderTextWrapper = styled.div`
 export const HeaderText = styled.h1`
     color: gold;
     opacity: 96%;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;

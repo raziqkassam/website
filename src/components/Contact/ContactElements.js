@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll'
 
 export const FooterContainer = styled.div`
-    height: 600px;
+    // height: 600px;
     background: black;
     // background: transparent;
     padding: 1rem 0 1rem 0;
@@ -36,8 +36,8 @@ export const FooterImage = styled.img`
 `
 
 export const FooterImageWrapper = styled(LinkS)`
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     cursor: pointer;
     margin-bottom: 80px;
 `
@@ -107,5 +107,5 @@ export const FooterP2 = styled.p`
     color: gold;
     text-transform: uppercase;
     font-style: italic;
-    margin: 15px 15vw 10px 15vw;
+    margin: 15px 10vw 10px 15vw;
 `

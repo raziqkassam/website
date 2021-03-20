@@ -12,7 +12,7 @@ import {
     FooterLineContainer,
     Line,
     FooterP2
-} from './FooterElements'
+} from './ContactElements'
 
 const Footer = () => {
     return (

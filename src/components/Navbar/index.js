@@ -51,7 +51,7 @@ const Navbar = ( {toggle} ) => {
                                         >
                                             Skills</NavLinks>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLinks to="experience"
                                         smooth={true}
                                         duration={1500}
@@ -60,6 +60,26 @@ const Navbar = ( {toggle} ) => {
                                         offset={-80}
                                         >
                                             Experience</NavLinks>
+                        </NavItem> */}
+                        <NavItem>
+                            <NavLinks to="work"
+                                        smooth={true}
+                                        duration={1500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        >
+                                            Work</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="leadership"
+                                        smooth={true}
+                                        duration={1500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        >
+                                            Leadership</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='projects'

@@ -12,7 +12,9 @@ export const AboutWrapper = styled.div`
 export const AboutTitleContainer = styled.div`
     align-items: center;
     justify-content: center;
-    background: #121212;
+    // background: #121212;    
+    padding: 10px 0 10px 0; // 30px 0 30px 0;
+
 
     @media screen and (max-width: 480px) {
         padding: 5px;
@@ -22,7 +24,6 @@ export const AboutTitleContainer = styled.div`
 export const AboutTitle = styled.h1`
     text-align: center;
     color: gold;
-    padding: 30px 0 30px 0;
     font-size: 40px;
     font-weight: normal;
 
@@ -65,8 +66,8 @@ export const AboutTextWrapper = styled.div`
     max-width: 1100px;
     margin: 0 auto;
     padding: 50px 65px;
-    justify-content: center;    
-    align-content: center;
+    justify-content: center; 
+    align-items: center;
 
     @media (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1' 'col2'` )};
@@ -81,15 +82,14 @@ export const AboutTextContainer = styled.div`
 `
 
 export const AboutColumn1Container = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     padding: 0 10px;
     grid-area: col1;
     max-width: 540px;
     align-items: center;
 
-
     @media (max-width: 480px) {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 `
 
@@ -99,7 +99,6 @@ export const AboutColumn2Container= styled.div`
     grid-area: col2;
     max-width: 540px;
     align-items: center;
-
 
     @media (max-width: 480px) {
         padding: 0 15px;
@@ -128,7 +127,7 @@ export const AboutSubtitle = styled.p`
     line-height: 1.2;
 
     @media screen and (max-width: 480px) {
-        font-size: 20px;
+        font-size: 22px;
     }
 `
 
@@ -162,7 +161,7 @@ export const AboutText = styled.p`
     margin-left: 20px;
 
     @media screen and (max-width: 480px) {
-        max-width: 300px;
+        max-width: 280px;
     }
 `
 
@@ -176,7 +175,6 @@ export const AboutLinksContainer = styled.div`
         margin-right: 0;
         justify-content: space-evenly;
     }
-    
 `
 
 export const AboutLinks = styled.a`

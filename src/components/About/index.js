@@ -28,7 +28,8 @@ const About = () => {
             <AboutContainer>
                 
                     <AboutTitleContainer>
-                        <AboutTitle>Hi, my name is Raziq</AboutTitle>
+                        {/* <AboutTitle></AboutTitle> */}
+                        {/* <AboutTitle>Hi, my name is Raziq</AboutTitle> */}
                     </AboutTitleContainer>
                     <AboutBannerContainer>
                         {/* <AboutBanner src="../images/img-about-banner.png"/> */}
@@ -40,7 +41,7 @@ const About = () => {
                                 <AboutColumn1Container>
                                     <AboutTopline>I choose to embrace life’s opportunities and grow from life’s challenges.</AboutTopline>
                                     <AboutSubtitle>I am passionate about design, biotechnology, and machine learning. 
-                                        I want to create a better tomorrow by working to improve the lives of others.</AboutSubtitle>
+                                        I want to create a better tomorrow by working to improve the lives of others, today.</AboutSubtitle>
                                     <AboutSubtitle>I hope to design and develop creative medical solutions that can help enhance the everyday lives of those affected.</AboutSubtitle>
                                     
                                 </AboutColumn1Container>
@@ -53,7 +54,7 @@ const About = () => {
                                             at the University of Waterloo. I plan to graduate in 2024.</AboutText>
                                     </AboutImageTextContainer>
                                     <AboutHeader>Interests</AboutHeader>
-                                    <AboutText>Travelling, Squash, Golf, Hiking, Photography, Cinematography, Music, Painting, Web Design.</AboutText>
+                                    <AboutText>Travelling, Squash, Golf, Table Tennis, Photography, Cinematography, Music, Painting, Website Design.</AboutText>
                                     <AboutHeader>Get in Touch</AboutHeader>
                                     <AboutLinksContainer>
                                         <AboutLinks href='https://linkedin.com/in/raziqkassam' target="_blank" rel="noreferrer noopener">LINKEDIN</AboutLinks>
