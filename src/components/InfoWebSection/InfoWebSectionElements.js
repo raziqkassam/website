@@ -8,7 +8,7 @@ export const InfoContainer = styled.div`
     }
 
     @media (max-width: 480px) {
-        padding: 20px 0 0 0;
+        padding: 20px 0 30px 0;
     }
 `
 
@@ -29,46 +29,58 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
+    max-width: 1000px;
     display: grid;
-    // grid-auto-columns: minmax( auto, 1fr );
-    align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
-    // grid-template-areas: 'col2 col1';
-
+    // align-items: center;
+    grid-template-areas: 'col3 col1';
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
-        // grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'` )};
-        grid-template-areas: 'col2' 'col1';
-
+        grid-template-areas: 'col1' 'col3';
     }
 `
 
 export const Column1 = styled.div`
-    width: 700px;
     margin-bottom: 15px;
-    // padding: 0 15px;
+    padding: 0 15px;
     grid-area: col1;
+    align-self: center;
+    width: 700px;
 
     @media (max-width: 480px) {
-        padding: 0 15px;
+        // padding: 0 15px;
+        margin: -10px 0 0 0;
         width: auto;
     }
 `
 
-export const Column2 = styled.div`
-    // margin-bottom: 15px;
-    // padding: 0 15px;
-    grid-area: col2;
-    align-items: center;
+// export const Column2 = styled.div`
+//     margin-bottom: 15px;
+//     padding: 0 15px;
+//     grid-area: col2;
+//     align-self: center;
+//     width: 180px;
 
+//     @media (max-width: 480px) {
+//         width: 200px;
+//         justify-self: center;
+//     }
+// `
+
+export const Column3 = styled.div`
+    margin-bottom: 15px;
+    // padding: 0 15px;
+    grid-area: col3;
+    
     @media (max-width: 480px) {
-        padding: 0 15px;
+        padding: 0 -10px;
     }
 `
 
 export const TextWrapper = styled.div`
-    // max-width: 540px;
-    padding: 0 10px;
+    max-width: 540px;
+    padding-top: 0;
+    // justify-content: center;
 `
 
 export const Title = styled.p`
@@ -78,13 +90,11 @@ export const Title = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 10px; // 36px;
-    margin-top: 0px;
-    // text-align: ${({ align_left }) => (align_left ? 'left' : 'right')};
+    margin: 0 0 10px 20px;
     text-align: left;
 
     @media (max-width: 480px) {
-        text-align: left;
+        margin: 40px 0 0px 20px;
     }
 `
 
@@ -95,29 +105,33 @@ export const TopLine = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    max-width: 700px;
-    // text-align: ${({ align_left }) => (align_left ? 'left' : 'right')};
+    margin: 0 0 15px 0;
     text-align: left;
+    padding: 0 0 0 20px;
 
 
     @media (max-width: 480px) {
-        text-align: left;
-        max-width: 250px;
+        margin-top: 10px;
+        // text-align: left;
+        max-width: 400px;
     }
 `
 
 export const Heading = styled.h1`
-    color: #f7f8fa;    
     // color: white;
-    font-size: 35px; //48px;
+    color: #f7f8fa;
+    font-size: 35px;
     line-height: 1.1;
     font-weight: 600;
-    margin-bottom: 10px; //42px;
-    // text-align: right;
+    margin: 0 0 30px -20px;
+    text-align: left;
+    padding: 0 0 0 30px;
 
     @media (max-width: 480px) {
         font-size: 27px;
+        max-width: 80vw;
+        text-align: left;
+        margin: 0px;
     }
 `
 
@@ -130,56 +144,40 @@ export const Subtitle = styled.p`
 `
 
 export const BulletPoints = styled.p`
-    max-width: 650px;
-    margin-bottom: 12px;
+    max-width: 700px;
+    margin: 0 0 15px 20px;
     font-size: 20px;
     line-height: 1.1;
     color: ${({ darkText }) => (darkText ? '#010606' : '#f0f0f0')};
+
+    @media (max-width: 480px) {
+        max-width: 325px;
+    }
 `
 
 export const BtnWrap = styled.div`
-    margin-top: 50px;
     display: flex;
-    justify-content: flex-start;
-`
-
-export const ImgWrap = styled.div`
-    max-width: 250px;
-    height: 100%;
-    margin: 20px 50px 0 0px;
-    justify-content: center;
-
-    @media (max-width: 768px) {
-        // max-width: 400px;
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
+    justify-content: left;
+    margin: 30px 0 0 20px;
 
     @media (max-width: 480px) {
-        align-content: center;
-        margin: 0 0 12px 30px;
-
-        // height: 150px;
-        overflow: hidden;
+        max-width: 325px;
+        margin: 30px 0 20px 20px;
     }
 `
 
 export const Img = styled.img`
-    width: 100%; // 85%
-    // margin: 0 0 10px 0;
-    padding: 0;
-    border-radius: 10px;
-    // max-height: 90%;
-    align-self: center;
+    margin: 0;
+    overflow: hidden;
+    padding: 15px 15px 0 15px;
+    border-radius: 20px;
+    max-height: 200px;
+    max-width: 400px;
     justify-self: center;
 
     @media (max-width: 768px) {
-        margin-top: 0;
-    }
-
-    @media (max-width: 480px) {
-        margin: 0px 0 0 0;
+        margin: 0 0 0 0;
+        // padding: 0 15px;
     }
 
     &:hover {

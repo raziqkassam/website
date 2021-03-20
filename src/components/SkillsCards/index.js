@@ -11,20 +11,20 @@ import {
     Title
 } from './SkillsCardsElements'
 
-const Hobbies = () => {
+const Skills = () => {
     return (
         <SkillsContainer id="skills">
 
             {/* <Title>skills</Title> */}
-            <TopLine>“Education is an ornament in prosperity and a refuge in adversity”</TopLine>
-            <TopLine>- Aristotle</TopLine>
+            <TopLine>“Education is an ornament in prosperity and a refuge in adversity” - Aristotle</TopLine>
+            {/* <TopLine>- Aristotle</TopLine> */}
 
             <SkillsWrapper>
                 
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s1.svg" alt='na' />
                     <SkillsH2>Programming</SkillsH2>
-                    <SkillsP>C++, C#, Python</SkillsP>
+                    <SkillsP>Python, C++, C#</SkillsP>
                     <SkillsP>Node.js, Arduino</SkillsP>
                 </SkillsCard>
 
@@ -45,7 +45,7 @@ const Hobbies = () => {
                 <SkillsCard>
                     <SkillsIcon src="./../images/img-s4.svg" alt='na' />
                     <SkillsH2>graphic design</SkillsH2>
-                    <SkillsP>SketchBook, Adobe Photoshop</SkillsP>
+                    <SkillsP>SketchBook, Photoshop</SkillsP>
                     <SkillsP>Final Cut Pro, Canva, Figma</SkillsP>
                 </SkillsCard>
 
@@ -54,4 +54,4 @@ const Hobbies = () => {
     )
 }
 
-export default Hobbies
+export default Skills

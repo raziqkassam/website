@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HobbiesContainer = styled.div`
     height: flex; // 1100px
-    padding: 100px 0 100px 0;
+    padding: 40px 0;
 
     display: flex;
     flex-direction: column;
@@ -10,6 +10,11 @@ export const HobbiesContainer = styled.div`
     align-items: center;
     background: #373737;
     // max-width: 100vw;
+
+    @media screen and (max-width: 480px) {
+        padding: 30px 0 40px 0;
+    }
+
 `
 
 export const HobbiesWrapper = styled.div`
@@ -18,27 +23,43 @@ export const HobbiesWrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
-    grid-gap: 16px;
+    grid-gap: 20px;
     // padding: 0 50px;
+    justify-content: center;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: auto auto;
     }
 
     @media screen and (max-width: 760px) {
-        grid-template-columns: auto;
+        grid-template-columns: auto; //auto auto; //
         padding: 0 20px;
+        // grid-gap: 5px;
     }
 `
 
 export const Title = styled.p`
     color: #52A3FF; //black
-    font-size: 20px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+
+    align-self: start;
+    margin-left: 12%;
+`
+
+export const Title2 = styled.p`
+    color: gold; //black
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
     margin-top: 0px;
 
     align-self: start;
@@ -58,7 +79,7 @@ export const Subtitle = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-top: 0px;
 `
 
@@ -72,13 +93,13 @@ export const HobbiesPointerTitle = styled.div`
 
 export const TopLine = styled.p`
     color: #DEC11B; // #52A3FF; //#DEC11B;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 5px;
-    margin-top: 25px;
+    margin-top: 20px;
 
     @media screen and (max-width: 400px) {
         max-width: 200px;
@@ -93,9 +114,6 @@ export const HobbiesCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -110,12 +128,12 @@ export const HobbiesCardHover = styled.div`
     align-items: center;
     border-radius: 10px;
     max-height: 340px;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
+    // padding: 0 5px;
 
     cursor: pointer;
 
     &:hover {
+        transform: scale(1.01);
         transition: all 0.2s ease-in-out;
     }
 `
@@ -130,6 +148,12 @@ export const HobbiesPointer = styled.div`
     color: gold;
     margin-left: -30px;
     margin-right: 20px;
+
+    // @media screen and (max-width: 480px) {
+    //     margin-left: -5px;
+    //     margin-right: 20px;
+    //     font-size: 15px;
+    // }
 `
 
 export const HobbiesIcon = styled.img`
@@ -139,6 +163,11 @@ export const HobbiesIcon = styled.img`
     object-fit: cover;
     margin-bottom: 10px;
     border: 3px outset #52A3FF;
+
+    @media screen and (max-width: 400px) {
+        // height: 120px;
+        // width: 150px;
+    }
 `
 
 export const HobbiesH1 = styled.h1`
@@ -148,22 +177,32 @@ export const HobbiesH1 = styled.h1`
     // margin-top: 40px;
 
     @media screen and (max-width: 480px) {
-        font-size: 2rem;
+        // font-size: 2rem;
     }
 `
 
 export const HobbiesH2 = styled.h2`
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 22px;
     text-align: center;
     color: gold;
+
+    @media screen and (max-width: 480px) {
+        // font-size: 18px;
+        // line-height: 0.9;
+        // margin-bottom: 5px;
+    }
 `
 
 export const HobbiesP = styled.p`
-    font-size: 1rem;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 10px;
     color: white;
+
+    @media screen and (max-width: 480px) {
+        // font-size: 15px;
+        // line-height: 0.9;
+        margin-bottom: 10px;
+    }
 `
 
 export const LineContainer = styled.div`
