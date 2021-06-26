@@ -96,7 +96,7 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    max-width: 700px;
+    max-width: 300px;
     // text-align: ${({ align_left }) => (align_left ? 'left' : 'right')};
     text-align: left;
 

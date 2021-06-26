@@ -1,5 +1,7 @@
 import React from 'react'
 import { ButtonWeb } from '../ButtonElements'
+import Carousel from 'styled-components-carousel';
+import Slider from 'react-styled-carousel';
 
 import { 
     InfoContainer,
@@ -17,10 +19,10 @@ import {
     ImgWrap,
     Img,
     Title
-} from './InfoWebSectionElements'
+} from '../InfoWebSection/InfoWebSectionElements'
 
 
-const InfoWebSection = ( {
+const InfoWebScrollSection = ( {
     lightBg,
     darkText
 }) => {
@@ -31,30 +33,22 @@ const InfoWebSection = ( {
                     {/* <Title>Website Developor Experience</Title> */}
                     <Heading>Freelance Website Developer</Heading>
 
+                    <Carousel 
+                        center={true}
+                        showArrows
+                        showIndicator={true}
+                        swipeable
+                        infinite
+                        slidesToShow={1}
+                        centerPadding={-300}
+                        scaleOnFocus={1}
+                    >
                         <InfoRow>
                             <Column1>
                                 <TextWrapper>
-                                    <Title>Apr - June 2021</Title>
-                                    <TopLine>Technology4Seniors</TopLine>
-                                    <BulletPoints darkText={darkText}>Created an informative website for a non-profit that helps seniors stay connected through virtual assistant technology.</BulletPoints>
-                                    <BtnWrap>
-                                        <ButtonWeb href="https://www.technology4seniors.ca" target="_blank" rel="noreferrer noopener">
-                                            Technology4Seniors
-                                        </ButtonWeb>
-                                    </BtnWrap>
-                                </TextWrapper>
-                            </Column1>
-                            <Column3>
-                                <Img src="./../images/web-tech4.png" alt="Technology4Seniors" />
-                            </Column3>
-                        </InfoRow>
-
-                        <InfoRow>
-                            <Column1>
-                                <TextWrapper>
-                                    <Title>Mar 2021 - Present</Title>
+                                    <Title>March 2021 - Present</Title>
                                     <TopLine>Ismaili Youth Soccer Academy</TopLine>
-                                    <BulletPoints darkText={darkText}>Created a user-friendly website for an international academy that promotes the development of life-long skills through sport.</BulletPoints>
+                                    <BulletPoints darkText={darkText}>Created a user-friendly website for an international youth soccer academy that promotes the development of life-long skills through sport.</BulletPoints>
                                     <BtnWrap>
                                         <ButtonWeb >
                                             Coming Soon ...
@@ -71,9 +65,9 @@ const InfoWebSection = ( {
                         <InfoRow>
                             <Column1>
                                 <TextWrapper>
-                                    <Title>Jan - Feb 2021</Title>
+                                    <Title>February 2021</Title>
                                     <TopLine>Ladhani Consulting</TopLine>
-                                    <BulletPoints darkText={darkText} >Created a multi-page website for a consulting firm garnering over 200 monthly visitors.</BulletPoints>
+                                    <BulletPoints darkText={darkText} >Created a multi-page website for a digital marketing consulting firm, that aligned with its professional brand.</BulletPoints>
 
                                     <BtnWrap>
                                         <ButtonWeb href="https://www.ladhaniconsulting.ca" target="_blank" rel="noreferrer noopener" >
@@ -88,10 +82,11 @@ const InfoWebSection = ( {
                             </Column3>
                         </InfoRow>
 
+                    </Carousel>
                 </InfoWrapper>
             </InfoContainer>
         </>
     )
 }
 
-export default InfoWebSection
+export default InfoWebScrollSection
