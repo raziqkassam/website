@@ -8,7 +8,7 @@ export const InfoContainer = styled.div`
     }
 
     @media (max-width: 480px) {
-        padding: 20px 0 30px 0;
+        padding: 20px 0 10px 0;
     }
 `
 
@@ -68,12 +68,14 @@ export const Column1 = styled.div`
 // `
 
 export const Column3 = styled.div`
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     // padding: 0 15px;
     grid-area: col3;
     
     @media (max-width: 480px) {
-        padding: 0 -10px;
+        // padding: 0 -10px;
+        justify-items: center;
+        display: none;
     }
 `
 
@@ -113,7 +115,7 @@ export const TopLine = styled.p`
     @media (max-width: 480px) {
         margin-top: 10px;
         // text-align: left;
-        max-width: 400px;
+        max-width: 250px;
     }
 `
 
@@ -151,7 +153,7 @@ export const BulletPoints = styled.p`
     color: ${({ darkText }) => (darkText ? '#010606' : '#f0f0f0')};
 
     @media (max-width: 480px) {
-        max-width: 325px;
+        max-width: 250px;
     }
 `
 
@@ -171,8 +173,8 @@ export const Img = styled.img`
     overflow: hidden;
     padding: 15px 15px 0 15px;
     border-radius: 20px;
-    max-height: 200px;
-    max-width: 400px;
+    height: 200px;
+    width: 350px;
     justify-self: center;
 
     @media (max-width: 768px) {
@@ -180,9 +182,10 @@ export const Img = styled.img`
         // padding: 0 15px;
     }
 
-    &:hover {
-        transform: scale(1.02);
-        transition: 0.25s all ease-in-out
+    @media (max-width: 480px) {
+        max-height: 175px;
+        max-width: 290px;
+        justify-self: center;
     }
 `
 

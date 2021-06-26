@@ -5,14 +5,13 @@ export const experience_XSENSOR = {
     darkText: false,
 
     align_left: true, 
-    title: 'Work Experience', 
-    topline: "Jan - Apr 2021 | XSENSOR Technology Corporation",
+    title: 'Jan - Apr 2021', 
+    topline: "XSENSOR Technology Corporation",
 
     headline: 'Machine Learning Intern', 
-    description1: "Collected, cleaned and processed pressure imaging data to improve a joint detection machine learning model.",
-    description2: "Executed Python code that created plots and extracted statistics for international client reports.",
-    description3: "Assisted with the upscaling and transfer of the data collection and pipeline to Amazon Web Services.",
-    // description4: "Orchestrated the outsourcing of data labelling and created learning tools for international employees.",
+    description3: "Oversaw data collection, cleaning, post-processing and testing that improved a machine learning models prediction of a patient’s risk of pressure injury.", // Collected, cleaned and processed pressure imaging data to improve a joint detection machine learning model.",
+    description2: "Led data cleaning outsourcing efforts, including vendor selection, negotiation of terms, design and delivery of training resources, and establishment of virtual workspace environments through AWS in order to efficiently upscale the process.", // "Efficiently managed the outsourcing of data cleaning by communicating with and developing training resources for international partners.",//"Executed Python code that created plots and extracted statistics for international client reports.",
+    description1: "Integrated signal detection and filtering to help create a contactless system that used Python to detect a patient’s real-time heart rate with an accuracy above 94%.", // "Assisted with the upscaling and transfer of the data collection and pipeline to Amazon Web Services.",
 
     imgStart: false, // true -> img on right, false -> img on left
     img: "./../images/img-x.jpg", 
@@ -38,12 +37,15 @@ export const experience_BCI = {
     description2: 'Utilized Python to analyze real-time EEG data and Node.js for controlling a robot to move based on extracted features.',
     description4: 'Presented the project outcome at 2 symposiums and received an award for the best 3-minute thesis presentation.',
     
-    imgStart: false, // true -> img on right, false -> img on left
+    imgStart: true, // true -> img on right, false -> img on left
     img: "./../images/img-bci3.jpg", // image location
     alt: 'BCI', // alternate text instead of image
 
     buttonLabel: 'Github', // words on the button
     buttonLink: 'https://github.com/raziqkassam/sphero', // what href or external link the button will take you to
+
+    buttonLabel2: "Presentation",
+    buttonLink2: "https://www.youtube.com/watch?v=D6xbxsmxb2w"
 }
 
 export const experience_BioTEC = {
@@ -57,8 +59,8 @@ export const experience_BioTEC = {
     topline: "BioTEC Conference", // 
     headline: 'Web Platform Lead',
     description1: 'Design and maintain the official website for the Biotechnology and Bioengineering Conference (BioTEC).',
-    description2: 'Plan website layouts in Figma and apply creative design solutions to help craft the digital brand of the conference.',
-    description3: "Collaborate with multiple teams to produce, market and implement forms of content to global attendees.",
+    description2: 'Plan website layouts in Figma and apply creative design solutions to showcase the brand to over 800 monthly visitors.',
+    description3: "Collaborate with 9 teams to produce, market and implement forms of content to over 850 global attendees.",
     
     imgStart: false,
     img: "./../images/img-biotec.jpg", 

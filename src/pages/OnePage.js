@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import InfoSection2 from '../components/InfoSection2';
+import InfoSection3 from '../components/InfoSection3';
 import InfoWebSection from '../components/InfoWebSection';
 import { aboutMe, experience_BCI, experience_XSENSOR, experience_GE, experience_Lumiere, experience_UWSquash, project_Joymouse, experience_BioTEC, project_WebDev } from '../components/InfoSection/Data';
 
@@ -14,6 +15,7 @@ import SkillsCards from '../components/SkillsCards';
 import Header from '../components/Headers';
 import { Header_AboutMe, Header_Experience, Header_Projects, Header_Skills, Header_Contact, Header_Work, Header_Leadership } from '../components/Headers/HeaderData';
 import About from '../components/About';
+import InfoWebScrollSection from '../components/InfoWebScroll';
 
 const OnePage = () => {
 
@@ -30,6 +32,7 @@ const OnePage = () => {
 
             <HeroSection />
 
+
             <Header {...Header_AboutMe}/>
             <About/>
 
@@ -37,9 +40,10 @@ const OnePage = () => {
             <SkillsCards />
 
             <Header {...Header_Work}/>
-            {/* <InfoSection2 {...experience_XSENSOR}/> */}
-            <InfoSection {...experience_BCI}/>
+            <InfoSection2 {...experience_XSENSOR}/>
+            <InfoSection3 {...experience_BCI}/>
             <InfoWebSection {...project_WebDev}/>
+            {/* <InfoWebScrollSection /> */}
             
             <Header {...Header_Leadership}/>
             <InfoSection {...experience_BioTEC}/>
