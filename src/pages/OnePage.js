@@ -5,7 +5,7 @@ import InfoSection from '../components/InfoSection';
 import InfoSection2 from '../components/InfoSection2';
 import InfoSection3 from '../components/InfoSection3';
 import InfoWebSection from '../components/InfoWebSection';
-import { aboutMe, experience_BCI, experience_XSENSOR, experience_GE, experience_Lumiere, experience_UWSquash, project_Joymouse, experience_BioTEC, project_WebDev } from '../components/InfoSection/Data';
+import { aboutMe, experience_BCI, experience_XSENSOR, experience_GE, experience_Lumiere, experience_UWSquash, project_Joymouse, experience_BioTEC, project_WebDev, experience_Ford, project_Gaitmate, experience_Molli } from '../components/InfoSection/Data';
 
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -40,6 +40,8 @@ const OnePage = () => {
             <SkillsCards />
 
             <Header {...Header_Work}/>
+            <InfoSection2 {...experience_Molli}/>
+            <InfoSection2 {...experience_Ford}/>
             <InfoSection2 {...experience_XSENSOR}/>
             <InfoSection3 {...experience_BCI}/>
             <InfoWebSection {...project_WebDev}/>
@@ -51,8 +53,9 @@ const OnePage = () => {
             <InfoSection2 {...experience_GE}/>
 
             <Header {...Header_Projects}/>
+            <InfoSection2 {...project_Gaitmate}/>
             <InfoSection {...project_Joymouse}/>
-            <InfoSection2 {...experience_Lumiere}/>
+            {/* <InfoSection2 {...experience_Lumiere}/> */}
             
             <Hobbies />
 

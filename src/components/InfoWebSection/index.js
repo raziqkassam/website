@@ -49,7 +49,7 @@ const InfoWebSection = ( {
                             </Column3>
                         </InfoRow>
 
-                        <InfoRow>
+                        {/* <InfoRow>
                             <Column1>
                                 <TextWrapper>
                                     <Title>Mar 2021 - Present</Title>
@@ -65,7 +65,7 @@ const InfoWebSection = ( {
                             <Column3>
                                 <Img src="./../images/web-iysa.png" alt="IYSA" />
                             </Column3>
-                        </InfoRow>
+                        </InfoRow> */}
 
 
                         <InfoRow>
@@ -73,7 +73,7 @@ const InfoWebSection = ( {
                                 <TextWrapper>
                                     <Title>Jan - Feb 2021</Title>
                                     <TopLine>Ladhani Consulting</TopLine>
-                                    <BulletPoints darkText={darkText} >Created a multi-page website for a consulting firm garnering over 200 monthly visitors.</BulletPoints>
+                                    <BulletPoints darkText={darkText} >Created a dynamic website for a consulting firm garnering over 200 monthly visitors.</BulletPoints>
 
                                     <BtnWrap>
                                         <ButtonWeb href="https://www.ladhaniconsulting.ca" target="_blank" rel="noreferrer noopener" >
