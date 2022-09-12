@@ -34,7 +34,7 @@ export const AboutTitle = styled.h1`
 `
 
 export const AboutBannerContainer = styled.div`
-    background-image: url("../images/img-about-banner.png");
+    background-image: url("../images/img-about-banner-2.png");
     background-position: center center;
     background-size: cover;
     max-width: 100vw;
@@ -44,7 +44,7 @@ export const AboutBannerContainer = styled.div`
 
     @media screen and (max-width: 480px) {
         height: 80px;
-        background-image: url("../images/img-about-banner-mobile.png");
+        background-image: url("../images/img-about-banner-mobile-2.png");
     }
 `
 
