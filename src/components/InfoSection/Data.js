@@ -9,10 +9,10 @@ export const experience_Molli = {
     topline: "MOLLI Surgical",
 
     headline: 'Research & Development Engineer', 
-    description1: "",
-    description2: "",
+    description1: "Through working at MOLLI Surgical, I was able to get a lot of hands-on experience working with medical devices. My key project consisted of using Python to develop data-processing software in order to comprehensively characterize the accuracy of a surgical localization device.",
+    description2: "I was also able to work on multiple projects for other various novel electromechanical devices, and contributed to the regulatory and design processes with the research and development team.",
 
-    imgStart: false, // true -> img on right, false -> img on left
+    imgStart: false, // true -> img on right, false -> img on lefts
     img: "./../images/img-molli.jpeg", 
     alt: 'MOLLI', 
 
